@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00d8c9"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/img_home_sousuo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/home_sousuo_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/img_home_xinxi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/home_xinxi_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_home_sousuo"
+            android:background="#00d8c9"
+            app:tabIndicatorColor="#ffffff"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabMaxWidth="60dp"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextAppearance="@style/TabLayout"
+            android:layout_toLeftOf="@+id/img_home_xinxi"
+            app:tabTextColor="#ccffff">
+
+        </android.support.design.widget.TabLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_jianbian"
+            android:layout_toRightOf="@+id/img_home_sousuo"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_jianbian2"
+            android:layout_toLeftOf="@+id/img_home_xinxi"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_rl"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
