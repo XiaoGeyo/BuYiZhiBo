@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView=(ImageView) findViewById(R.id.img);
-        Toast.makeText(this,"我的滴哪",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"我的滴",Toast.LENGTH_LONG).show();
         ImageLoader.getInstance().displayImage("http://img1.imgtn.bdimg.com/it/u=2932272756,4220615981&fm=23&gp=0.jpg", imageView, ImageOption.defaultOptions);
     }
 }
