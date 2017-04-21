@@ -11,12 +11,13 @@ import mzy.bc.com.buyizhibo.utils.ImageOption;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageView=(ImageView) findViewById(R.id.img);
-        Toast.makeText(this,"我的滴",Toast.LENGTH_LONG).show();
+        imageView = (ImageView) findViewById(R.id.img);
+        Toast.makeText(this, "我的滴", Toast.LENGTH_LONG).show();
         ImageLoader.getInstance().displayImage("http://img1.imgtn.bdimg.com/it/u=2932272756,4220615981&fm=23&gp=0.jpg", imageView, ImageOption.defaultOptions);
     }
 }

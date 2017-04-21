@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_bofang"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bofang_tou">
+
+        <mzy.bc.com.buyizhibo.view.XCRoundImageView
+            android:id="@+id/img_bofang_tou"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:src="@mipmap/asd" />
+
+        <mzy.bc.com.buyizhibo.view.XCRoundImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignBottom="@+id/img_bofang_tou"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/img_bofang_tou"
+            android:src="@mipmap/ic_launcher1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bfn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_bofang_tou"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_zb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_zb"
+                android:layout_marginTop="1dp"
+                android:text="21389"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/rl_bfn"
+            android:background="@drawable/bofang_guanzhu"
+            android:gravity="center"
+            android:text="关注"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_bofang"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/bofang_piao">
+
+            <TextView
+                android:id="@+id/tv_yingpiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="映票:"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ying_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_yingpiao"
+                android:text="35491970"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tv_ying_num"
+                android:src="@mipmap/you" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_yk_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="35285538"
+            android:textColor="#d9d9d9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_yk_number"
+            android:text="映客号:"
+            android:textColor="#d9d9d9"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bofang_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/rl_bofang"
+        android:paddingLeft="10dp"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bofang_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_bofang_publicchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/room_down_publicchat" />
+
+        <ImageView
+            android:id="@+id/img_bofang_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/room_down_close" />
+
+        <ImageView
+            android:id="@+id/img_bofang_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_bofang_close"
+            android:src="@mipmap/room_down_share" />
+
+        <ImageView
+            android:id="@+id/img_bofang_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_bofang_share"
+            android:src="@mipmap/room_down_gift" />
+
+        <ImageView
+            android:id="@+id/img_bofang_privatechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_bofang_gift"
+            android:src="@mipmap/room_down_privatechat" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <org.dync.giftlibrary.widget.GiftFrameLayout
+            android:id="@+id/gift_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <org.dync.giftlibrary.widget.GiftFrameLayout
+            android:id="@+id/gift_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

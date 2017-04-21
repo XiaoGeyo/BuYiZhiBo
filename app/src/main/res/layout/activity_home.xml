@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:clipChildren="false"
     tools:context="mzy.bc.com.buyizhibo.activity.HomeActivity">
+
     <RelativeLayout
         android:id="@+id/rl_home_frament"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rl_home_bottom"
-        >
+        android:layout_above="@+id/rl_home_bottom">
 
 
     </RelativeLayout>
@@ -20,8 +20,8 @@
         android:id="@+id/rl_home_bottom"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="#ffff"
         android:layout_alignParentBottom="true"
+        android:background="#ffff"
         android:orientation="horizontal">
 
         <ImageView
@@ -31,10 +31,10 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:background="#ffffff"
-            android:src="@mipmap/tab_live_p"
-             />
+            android:src="@mipmap/tab_live_p" />
 
         <ImageView
+            android:id="@+id/img_home_zhong"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_gravity="bottom"
@@ -52,11 +52,11 @@
             android:src="@mipmap/tab_me" />
     </LinearLayout>
     <!--<RelativeLayout-->
-        <!--android:id="@+id/rl_home_frament"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_above="@+id/rl_home_bottom"-->
-        <!--&gt;</RelativeLayout>-->
+    <!--android:id="@+id/rl_home_frament"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/rl_home_bottom"-->
+    <!--&gt;</RelativeLayout>-->
 
 
 </RelativeLayout>

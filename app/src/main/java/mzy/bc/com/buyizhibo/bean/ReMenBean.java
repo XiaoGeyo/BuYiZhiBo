@@ -9,7 +9,6 @@ import java.util.List;
 public class ReMenBean {
 
 
-
     private ResultBean result;
     private int error_code;
 
@@ -199,8 +198,8 @@ public class ReMenBean {
                 public static class UserDataBean {
                     /**
                      * user_name : SKY
-                     SKY
-                     SKY
+                     * SKY
+                     * SKY
                      * avatar : http://img4.imgtn.bdimg.com/it/u=3547796456,889162116&fm=23&gp=0.jpg
                      * sign : 僵僵：“我是单身僵啊，好巧吧，那我们一起吖”。  XX：“那你也吃草啊？”
                      */

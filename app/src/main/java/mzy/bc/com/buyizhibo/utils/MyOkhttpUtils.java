@@ -20,15 +20,17 @@ public class MyOkhttpUtils {
     private String url;
     public Map map;
     public GetValues getValues;
-    public MyOkhttpUtils(String url, Map map,GetValues getValues) {
+    public int s=0;
+    public MyOkhttpUtils(String url, Map map,GetValues getValues,int s) {
         super();
         this.url=url;
         this.map=map;
         this.getValues=getValues;
+        this.s=s;
         httpPosst();
     }
     public interface GetValues {
-        String getResults(String result);
+        String getResults(String result,int s);
     }
     public void httpPosst(){
 
@@ -40,7 +42,7 @@ public class MyOkhttpUtils {
 
                     @Override
                     public void onResponse(String response, int id) {
-                        getValues.getResults(response);
+                        getValues.getResults(response,s);
                     }
                 });
     }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#10ffffff">
+
+    <ImageView
+        android:id="@+id/img_dia_gift_lian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/pop_gift_lian" />
+
+    <ImageView
+        android:id="@+id/img_gift_item_da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_dia_gift_lian"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/li" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gift01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_gift_item_da"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:textColor="#00ffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_gift_huang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/tv_one"
+            android:src="@mipmap/pay_diamond" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_gift_jing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_gift01"
+        android:layout_centerHorizontal="true"
+        android:text="+10经验值"
+        android:textSize="10sp" />
+</RelativeLayout>

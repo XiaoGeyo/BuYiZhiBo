@@ -15,10 +15,11 @@ import mzy.bc.com.buyizhibo.R;
 
 public class HomeGuanZhuFragment extends Fragment {
     private View view;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.home_fragment_guanzhu,null);
+        view = inflater.inflate(R.layout.home_fragment_guanzhu, null);
         return view;
     }
 }

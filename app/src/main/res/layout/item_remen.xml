@@ -7,109 +7,109 @@
         android:id="@+id/rl_remen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
         <mzy.bc.com.buyizhibo.view.XCRoundImageView
             android:id="@+id/img_remen_touxiang"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/asd"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/asd" />
 
         <TextView
             android:id="@+id/tv_remen_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/img_remen_touxiang"
-            android:text="嘻嘻嘻嘻嘻嘻"
-            android:layout_marginLeft="15dp"/>
+            android:text="嘻嘻嘻嘻嘻嘻" />
 
         <TextView
             android:id="@+id/tv_remen_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
             android:text="18888"
             android:textColor="#ff934d"
-            android:textStyle="bold"
-            android:layout_marginRight="10dp"/>
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/img_remen_touxiang"
-            android:layout_toRightOf="@+id/img_remen_touxiang"
             android:layout_marginLeft="15dp"
-            >
+            android:layout_toRightOf="@+id/img_remen_touxiang">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_baioqian"
+                android:gravity="center"
                 android:text="好声音"
-                android:textSize="10sp"
                 android:textColor="#00d8c9"
-                android:background="@drawable/button_baioqian"
-                android:gravity="center"
-                />
+                android:textSize="10sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_baioqian"
+                android:gravity="center"
                 android:text="才艺"
-                android:textSize="10sp"
                 android:textColor="#00d8c9"
-                android:background="@drawable/button_baioqian"
-                android:gravity="center"
-                android:layout_marginLeft="10dp"
-                />
+                android:textSize="10sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_baioqian"
+                android:gravity="center"
                 android:text="气质"
-                android:textSize="10sp"
                 android:textColor="#00d8c9"
-                android:background="@drawable/button_baioqian"
-                android:gravity="center"
-                android:layout_marginLeft="10dp"
-                />
+                android:textSize="10sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="逗比"
-                android:textSize="10sp"
-                android:textColor="#00d8c9"
+                android:layout_marginLeft="10dp"
                 android:background="@drawable/button_baioqian"
                 android:gravity="center"
-                android:layout_marginLeft="10dp"
-                />
+                android:text="逗比"
+                android:textColor="#00d8c9"
+                android:textSize="10sp" />
         </LinearLayout>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/remen_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_remen"
-        android:layout_marginTop="10dp"
-        >
-    <ImageView
-        android:background="#f2e5e5"
-        android:id="@+id/img_da"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:src="@mipmap/as"
-        android:scaleType="fitXY"
-        />
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_da"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#f2e5e5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/as" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_bzhibo"
-            android:text="直播"
-            android:textSize="12sp"
-            android:textColor="#ffffff"
-            android:gravity="center"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            />
-        </RelativeLayout>
+            android:background="@drawable/button_bzhibo"
+            android:gravity="center"
+            android:text="直播"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="10dp"
